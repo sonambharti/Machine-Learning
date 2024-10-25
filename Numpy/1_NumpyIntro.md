@@ -29,12 +29,12 @@ arrays with different shapes and sizes.
     -   Array Indexing and Slicing can be done using square brackets [] and colon : respectively
     -   Array Indexing and Slicing can be done using negative index as well.
 
-**Examples**
+**Examples** <br/>
     `
-    import numpy
-    arr = numpy.array([1,2,3])
-    print(arr[0]) # indexing
-    print(arr[1:3]) # slicing
+    import numpy <br/>
+    arr = numpy.array([1,2,3]) <br/>
+    print(arr[0]) # indexing <br/>
+    print(arr[1:3]) # slicing <br/>
     `
 
 ### 3. Data Type of a numpy array
