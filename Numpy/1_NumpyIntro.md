@@ -30,27 +30,27 @@ arrays with different shapes and sizes.
     -   Array Indexing and Slicing can be done using negative index as well.
 
 **Examples** <br/>
-<<<<<<< Updated upstream
-    ````
-        import numpy
-        arr = numpy.array([1,2,3])
-        print(arr[0]) # indexing
-        print(arr[1:3]) # slicing
-    ````
-=======
 ````
 import numpy
 arr = numpy.array([1,2,3])
 print(arr[0]) # indexing
 print(arr[1:3]) # slicing
 ````
->>>>>>> Stashed changes
 
 ### 3. Data Type of a numpy array
     -   The data type of a numpy array can be specified when creating the array using the numpy
     -   The data type of a numpy array can also be changed after the array is created using
     -   The data type of a numpy array can be checked using the numpy `dtype` function.
 
-**Example**
-``
+**Example** <br/>
+````
+import numpy
+arr = numpy.array([1,2,3], dtype=numpy.int32)
+print(arr.dtype) # checking data type
+````
 
+### 4. numpy.reshape()
+    -   The numpy.reshape() function is used to change the shape of a numpy array without changing
+    -   The numpy.reshape() function can be used to change the shape of a numpy array from
+
+**Examples** <br/>
