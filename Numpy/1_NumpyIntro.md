@@ -54,3 +54,20 @@ print(arr.dtype) # checking data type
     -   The numpy.reshape() function can be used to change the shape of a numpy array from
 
 **Examples** <br/>
+````
+import numpy
+arr = numpy.array([1,2,3,4])
+arr = arr.reshape(2,2)
+````
+
+### 5. numpy.transpose()
+    -   The numpy.transpose() function can be used to reverse or swap the order of the axes
+
+**Examples** <br/>
+````
+arr = numpy.array([1,2], [3,4])
+arr = numpy.transpose(arr)
+
+````
+
+
