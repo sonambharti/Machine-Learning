@@ -31,10 +31,10 @@ arrays with different shapes and sizes.
 
 **Examples** <br/>
     ```
-    import numpy
-    arr = numpy.array([1,2,3])
-    print(arr[0]) # indexing
-    print(arr[1:3]) # slicing
+        import numpy
+        arr = numpy.array([1,2,3])
+        print(arr[0]) # indexing
+        print(arr[1:3]) # slicing
     ```
 
 ### 3. Data Type of a numpy array
