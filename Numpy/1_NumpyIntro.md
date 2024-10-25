@@ -30,12 +30,12 @@ arrays with different shapes and sizes.
     -   Array Indexing and Slicing can be done using negative index as well.
 
 **Examples** <br/>
-    `
-    import numpy <br/>
-    arr = numpy.array([1,2,3]) <br/>
-    print(arr[0]) # indexing <br/>
-    print(arr[1:3]) # slicing <br/>
-    `
+    ```
+    import numpy
+    arr = numpy.array([1,2,3])
+    print(arr[0]) # indexing
+    print(arr[1:3]) # slicing
+    ```
 
 ### 3. Data Type of a numpy array
     -   The data type of a numpy array can be specified when creating the array using the numpy
