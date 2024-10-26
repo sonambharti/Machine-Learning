@@ -3,6 +3,65 @@ NumPy is a library for the Python programming language, adding support for large
 matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 NumPy arrays are similar to Python lists, but they are more efficient and offer more features.
 
+**Note:**
+%timeit is used to check the time to execute a code.
+
+## Range Array
+**Creating an array using numpy.arange()**
+````
+import numpy as np
+arr = np.arange(0:9)
+
+````
+
+
+## Zeros Array
+````
+import numpy as np
+arr = np.zeros(5)
+arr = np.zeros((3,6,4,2)) # multi-dimensional array
+
+````
+
+
+## Ones Array
+````
+import numpy as np
+arr = np.ones(5)
+arr = np.ones((7,3,2)) # multi-dimensional array
+````
+
+## Empty Array
+````
+import numpy as np
+arr = np.empty(5)
+````
+
+## Full Array
+````
+import numpy as np
+arr = np.full(5, 7)
+````
+
+## Full Array with Multi-Dimensional Array
+````
+import numpy as np
+arr = np.full((3, 4), 7)
+````
+
+## Full Array with Multi-Dimensional Array and Different Values
+````
+import numpy as np
+arr = np.full((3, 4), [1, 2, 3, 8, 4,3])
+````
+
+## Diagonal Array
+````
+import numpy as np
+arr = np.eye(3)
+````
+
+
 ## Methods of NumPy
 ### 1. numpy.array()
     -   The numpy.array() function is used to create a NumPy array from a Python list or other iterable
@@ -65,9 +124,35 @@ arr = arr.reshape(2,2)
 
 **Examples** <br/>
 ````
+import numpy
 arr = numpy.array([1,2], [3,4])
 arr = numpy.transpose(arr)
 
 ````
+
+### 6. Numpy Array copy
+    -   Copy is a new array with the same data as the original array
+    -   The numpy.copy() function is used to create a copy of a numpy array.
+
+**Examples** <br/>
+````
+import numpy
+arr = numpy.array([1,2,3])
+arr_copy = numpy.copy(arr)
+````
+
+### 7. Numpy Array view
+    -   A view is a new array that looks at the same data as the original array
+    -   The numpy.view() function is used to create a view of a numpy array.
+    -   View does not own the data and any changes made to the view will affect the original array, 
+        but any changes made to original array will 
+
+**Examples** <br/>
+````
+import numpy
+arr = numpy.array([1,2,3])
+arr_view = arr.view()
+````
+
 
 
