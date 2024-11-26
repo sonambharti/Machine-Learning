@@ -4,7 +4,7 @@ matrices, along with a large collection of high-level mathematical functions to 
 NumPy arrays are similar to Python lists, but they are more efficient and offer more features.
 
 **Note:**
-%timeit is used to check the time to execute a code.
+`%timeit` is used to check the time to execute a code.
 
 ## Range Array
 **Creating an array using numpy.arange()**
