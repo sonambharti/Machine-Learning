@@ -61,6 +61,12 @@ import numpy as np
 arr = np.eye(3)
 ````
 
+## Linespace Array
+````
+import numpy as np
+arr = np.linspace(0, 20, 5)
+````
+
 
 ## Methods of NumPy
 ### 1. numpy.array()

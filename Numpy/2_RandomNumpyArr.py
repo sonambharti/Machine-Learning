@@ -13,3 +13,18 @@ print("1-D random array: \n", randnArr1)
 
 randnArr2 = np.random.randn(2,4)
 print("2-D random array: \n", randnArr2)
+
+
+# ranf() - generate random float value in the half open interval[0.0, 1.0)
+randfArr1 = np.random.ranf(4)
+print("1-D random array: \n", randfArr1)
+
+# randfArr2 = np.random.ranf(2,4)
+# print("2-D random array: \n", randfArr2)
+
+# randint() - generate a random array between a range
+randintArr1 = np.random.randint(4)
+print("1-D random array: \n", randArr1)
+
+randintArr2 = np.random.randint((4,3))
+print("2-D random array: \n", randintArr2)
