@@ -123,6 +123,7 @@ df2.describe
 ### Handling Missing values and Null values in a dataset
 
 1. Dropping Rows with NaN values
+
 ````
 df2.dropna()  # default axis = 0
 df2.dropna(axis=1) 
@@ -132,11 +133,13 @@ df.dropna(inplace=True)         # droping NaN values in inplace dataframe
 
 
 2. Calculating the sum of Null Values in each column
+
 ````
 df2.isnull().sum()
 ````
 
 3. Filling the Null Values
+
 ````
 df2.fillna(0)                                       # fill NaN with 0
 df2.fillna({'Physics': 'none', 'Chemistry':0, 'Maths':30})  # fill NaN column wise value
