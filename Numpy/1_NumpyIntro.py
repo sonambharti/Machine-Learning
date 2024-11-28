@@ -34,7 +34,7 @@ print("Two dimensional one Array :\n", oneArr2)
 print("Dimension of oneArr2 = ", oneArr2.ndim) # find Dimension of the array
 print("Shape of the arr: ", oneArr2.shape) # Shape of the array
 
-oneArr3 = np.ones((4,4,4)) # creating 2-dimensional array
+oneArr3 = np.ones((4,4,4)) # creating multi-dimensional array
 print("Multi dimensional one Array :\n", oneArr3)
 print("Dimension of oneArr2 = ", oneArr3.ndim) # find Dimension of the array
 print("Shape of the arr: ", oneArr3.shape) # Shape of the array
