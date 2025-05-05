@@ -1,3 +1,14 @@
+<div>
+<head>
+  <meta charset="UTF-8">
+  <!-- Load MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body align='center'>
+
 #   Linear Regression
 Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It provides valuable insights for prediction and data analysis. <br>
 
@@ -22,6 +33,28 @@ b = intercept
 
 ### How to update m and b values to get the best-fit line? 
 The best-fit line is obtained by minimizing the sum of the squared errors between the observed and predicted values.
+  <p>
+    \[
+    \text{minimize } \frac{1}{n} \sum_{i=1}^{n} \left( \hat{y}_i - y_i \right)^2
+    \]
+  </p>
+</body>
+
+<div>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>minimize</mi>
+        <mrow>
+        <mo>&#x2211;</mo> <!-- summation -->
+        <mo>(</mo>
+        <msub><mi>y</mi><mi>i</mi></msub>
+        <mo>&#x2212;</mo>
+        <mover><mi>y&#773;</mi></mover>
+        <mo>)</mo>
+        </mrow>
+    </math>
+</div>
+
+
 <div>
     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mi>m</mi>
@@ -50,33 +83,5 @@ The best-fit line is obtained by minimizing the sum of the squared errors betwee
         </mrow>
     </mfrac>
     </math>
-
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-    <mi>b</mi>
-    <mo>=</mo>
-    <mover><mi>y&#773;</mi></mover>
-    <mo>&#x2212;</mo>
-    <mi>m</mi>
-    <mover><mi>x&#773;</mi></mover>
-    </math>
-
 </div>
-
-<div>
-    <p>
-    The cost function to minimize is:
-  </p>
-  <p>
-    \[
-    J(m, b) = \sum_{i=1}^{n} (y_i - (mx_i + b))^2
-    \]
-  </p>
-  <p>
-    Where:
-    <ul>
-      <li>\( y_i \): Actual observed value</li>
-      <li>\( mx_i + b = \hat{y}_i \): Predicted value</li>
-      <li>\( n \): Number of data points</li>
-    </ul>
-  </p>
 </div>
