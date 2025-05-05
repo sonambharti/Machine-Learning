@@ -1,4 +1,4 @@
-<div align='center'>
+<div>
 
 #   Linear Regression
 Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It provides valuable insights for prediction and data analysis. <br>
@@ -25,7 +25,7 @@ b = intercept
 ### How to update m and b values to get the best-fit line? 
 The best-fit line is obtained by minimizing the sum of the squared errors between the observed and predicted values.
     <div>
-        &sum;<sub>i=1</sub><sup>n</sup>({y_i}&#770; - y)
+        &sum;<sub>i=1</sub><sup>n</sup>({y&#770;<sub>i</sub>} - y)
     </div>
 
     <div>
