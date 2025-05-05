@@ -25,7 +25,7 @@ b = intercept
 ### How to update m and b values to get the best-fit line? 
 The best-fit line is obtained by minimizing the sum of the squared errors between the observed and predicted values.
     <div>
-        {&sum;<sub>i=1</sub>}<sup>n</sup>({y&#770;<sub>i</sub>} - y)
+        &sum;<sup>n</sup><sub>i=1</sub>(y&#770;<sub>i</sub> - y)
     </div>
 
     <div>
