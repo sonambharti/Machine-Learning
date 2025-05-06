@@ -80,7 +80,7 @@ In linear regression, the cost function measures how well the predicted values `
 The cost function for linear regression is the Mean Squared Error (MSE) or Mean Absolute Error (MAE).
 <div>
     <div align='center'>
-        Cost Function, (J) = 1/&frac1{n};&sum;<sub>i=1</sub><sup>n</sup>(y&#770;<sub>i</sub> - y)
+        Cost Function, (J) = 1/<sub>n</sub>&sum;<sub>i=1</sub><sup>n</sup>(y&#770;<sub>i</sub> - y)
     </div>
 
 </div>
