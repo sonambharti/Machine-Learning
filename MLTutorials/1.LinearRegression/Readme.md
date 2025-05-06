@@ -25,7 +25,7 @@ b = intercept
 ### How to update m and b values to get the best-fit line? 
 The best-fit line is obtained by `minimizing the sum of the squared errors` between the observed and predicted values.
     <div align='center'>
-        &sum;<sub>i=1</sub><sup>n</sup>(y&#770;<sub>i</sub> - y)
+        &sum;{(<sub>i=1</sub>)(<sup>n</sup>)}(y&#770;<sub>i</sub> - y)
     </div>
 </div>
 
@@ -80,7 +80,7 @@ In linear regression, the cost function measures how well the predicted values `
 The cost function for linear regression is the Mean Squared Error (MSE) or Mean Absolute Error (MAE).
 <div>
     <div align='center'>
-        Cost Function, (J) = \frac1n;&sum;<sub>i=1</sub><sup>n</sup>(y&#770;<sub>i</sub> - y)
+        Cost Function, (J) = &frac1n;&sum;{(<sub>i=1</sub>)(<sup>n</sup>)}(y&#770;<sub>i</sub> - y)
     </div>
 
 </div>
