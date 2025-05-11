@@ -31,7 +31,7 @@ For neuron
     </div>
 </div>
 
--   <code>w<sub>ji</sub><sup>l</sup></code> : Weight from neuron i (layer l-1) to neuron j. <br>
+-   <code><span><span>w<sub>ji</sub></span><sup>l</sup></span></code> : Weight from neuron i (layer l-1) to neuron j. <br>
 -   <code>a<sub>i</sub><sup>(l-1)</sup></code> : Activation of neuron i in previous layer. <br>
 -   <code>b<sub>j</sub><sup>(l)</sup></code>: Bias term. <br>
 -   g: Activation function (e.g., ReLU: `g(z) = max(0, z))`.
@@ -42,7 +42,7 @@ Example: Simple 3-Layer Network <br>
 <div align='center'>
     <code>
         <code>h = g(<span>W<sub>1</sub>x</span> + <span>b<sub>1<sub></span>)</code> <br>
-        <code>y = g(W<sub>2</sub>x + b<sub>2<sub>)</code>
+        <code>y = g(W<span><sub>2</sub>x</span> + <span>b<sub>2<sub></span>)</code>
     </code>
 </div>
 
