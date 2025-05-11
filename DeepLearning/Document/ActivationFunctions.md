@@ -26,10 +26,9 @@ Formula:
 Formula:
 <div>
     <div align='center'>
-        <code>Sigmoid, f(x) = <span>1 / (1 + <span>e<sup>-x</sup></span>)</span>
+        <code>Sigmoid, f(x) = <span>1 / (1 + <span>e<sup>-x</sup></span>)</span></code>
     </div>
 </div>
-
 -   Range: (0, 1) 
 -   Derivative:
 <div>
@@ -43,8 +42,8 @@ Formula:
 -   Useful in binary classification (as output activation)
 
 **Cons:** 
--   Vanishing gradient problem (when `|x|` is large) <br>
--   Outputs not centered at zero <br>
+-   Vanishing gradient problem (when `|x|` is large) 
+-   Outputs not centered at zero
 
 
 3.  Tanh (Hyperbolic Tangent)
