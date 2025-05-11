@@ -38,7 +38,7 @@ For neuron
 
 Example: Simple 3-Layer Network <br>
 &nbsp;  -   Input layer x, hidden layer h, output layer <br>
-```
+```html
 <div align='center'>
     <code>h = g(<span>W<sub>1</sub>x</span> + <span>b<sub>1<sub></span>)</code> <br>
     <code>y = g(<span>W<sub>2</sub>x</span> + <span>b<sub>2<sub></span>)</code>
