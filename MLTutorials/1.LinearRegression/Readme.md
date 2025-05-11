@@ -83,4 +83,15 @@ The cost function for linear regression is the Mean Squared Error (MSE) or Mean 
         Cost Function, <code>J(m, b) = (1/n) &sum;<sup>n</sup><sub>i=1</sub> |&#x0177;<sub>i</sub> - y<sub>i</sub>|</code><br>
     </div>
 </div>
+<div>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msubsup>
+      <mi>a</mi>
+      <mn>2</mn>
+      <mrow>
+        <mn>4</mn><mi>i</mi>
+      </mrow>
+    </msubsup>
+  </math>
+</div>
     
