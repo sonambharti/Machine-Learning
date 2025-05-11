@@ -38,16 +38,10 @@ For neuron
 
 Example: Simple 3-Layer Network <br>
 &nbsp;  -   Input layer x, hidden layer h, output layer <br>
-<div>
-    <div align='center'>
-        <code>
-            h = g(W<sub>1</sub>x + b<sub>1<sub>) <br>
-            y = g(W<sub>2</sub>x + b<sub>2<sub>) 
-        </code>
-    </div>
-</div>
-
-
+```
+h = g(W<sub>1</sub>x + b<sub>1<sub>) <br>
+y = g(W<sub>2</sub>x + b<sub>2<sub>) 
+```
 ##  Applications
 Neural networks are used in:
 1.  **Computer Vision**: Image classification (CNNs), object detection. <br>
