@@ -23,11 +23,11 @@ A Neural Network (NN) is a computational model inspired by the structure and fun
 For neuron 
 <div>
     <div align='center'>
-        <code>z<sub>j</sub><sup>(l)<sup> = &sum;<sub>i</sub> w<sub>ji</sub><sup>l</sup>  <br><br>
-         a<sub>i</sub><sup>(l-1)</sup> +  b<sub>j</sub><sup>(l)</sup></code>
-    </div>
-    <div align='center'>
-        <code>a<sub>j</sub><sup>(l)<sup> = g(z<sub>j</sub><sup>l</sup>)</code>
+        <code>
+            z<sub>j</sub><sup>(l)<sup> = &sum;<sub>i</sub> w<sub>ji</sub><sup>l</sup> a<sub>i</sub><sup>(l-1)</sup> +  b<sub>j</sub><sup>(l)</sup>
+            <br><br>
+            a<sub>j</sub><sup>(l)<sup> = g(z<sub>j</sub><sup>l</sup>)
+        </code>
     </div>
 </div>
 
@@ -40,8 +40,10 @@ Example: Simple 3-Layer Network <br>
 &nbsp;  -   Input layer x, hidden layer h, output layer <br>
 <div>
     <div align='center'>
-        <code>h = g(W<sub>1</sub>x + b<sub>1<sub>) <br>
-        y = g(W<sub>2</sub>x + b<sub>2<sub>) <br>
+        <code>
+            h = g(W<sub>1</sub>x + b<sub>1<sub>) <br>
+            y = g(W<sub>2</sub>x + b<sub>2<sub>) 
+        </code>
     </div>
 </div>
 
