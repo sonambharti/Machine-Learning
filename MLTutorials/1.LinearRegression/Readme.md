@@ -76,7 +76,7 @@ Multiple linear regression allows us to analyze relationship between multiple in
 
 
 ##  Cost function for Linear Regression
-In linear regression, the cost function measures how well the predicted values <code>(y<sub>i</sub>)&#770;</code> match the actual values <code>y<sub>i</sub></code>. It’s used to optimize the parameters (slope 𝑚 and intercept 𝑏) by minimizing the error. <br>
+In linear regression, the cost function measures how well the predicted values <code>y&#770;<sub>i</sub></code> match the actual values <code>y<sub>i</sub></code>. It’s used to optimize the parameters (slope 𝑚 and intercept 𝑏) by minimizing the error. <br>
 The cost function for linear regression is the Mean Squared Error (MSE) or Mean Absolute Error (MAE).
 <div>
     <div align='center'>
