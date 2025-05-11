@@ -15,8 +15,7 @@ Without an activation function, the neural network would behave like a linear re
 ##  🧮 Types of Activation Functions with Math, Graph, and Use-Cases
 <div>
 <ol>
-<li>
-1. **Step Function** (Not used today) <br>
+<li> <strong>Step Function</strong> (Not used today) <br>
 Formula:
 <div>
     <div align='center'>
@@ -27,8 +26,7 @@ Formula:
 **Use**: Early Perceptron models <br>
 **Problem**: Non-differentiable → can’t be used with backpropagation <br>
 </li>
-<li>
-2. **Sigmoid / Logistic Function** <br>
+<li><strong>Sigmoid / Logistic Function</strong> <br>
 Formula:
 <div>
     <div align='center'>
@@ -53,8 +51,7 @@ Formula:
 -  Vanishing gradient problem (when `|x|` is large) <br>
 -  Outputs not centered at zero <br>
 </li>
-<li>
-3.  **Tanh (Hyperbolic Tangent)** <br>
+<li><strong>Tanh (Hyperbolic Tangent)</strong> <br>
 Formula:
 <div>
     <div align='center'>
@@ -78,8 +75,7 @@ Formula:
 **Cons:** <br>
 -   Still suffers from vanishing gradient
 </li>
-<li>
-4. **ReLU (Rectified Linear Unit)** <br>
+<li><strong>ReLU (Rectified Linear Unit)</strong> <br>
 Formula:
 <div>
     <div align='center'>
@@ -104,8 +100,7 @@ Formula:
 **Cons:** <br>
 -   “**Dead neurons**” problem (gradient = 0 for x ≤ 0) <br>
 </li>
-<li>
-5. **Leaky ReLU** <br>
+<li><strong>Leaky ReLU</strong> <br>
 Formula:
 <div>
     <div align='center'>
@@ -118,15 +113,13 @@ Note: `α` is small (e.g., 0.01) <br>
 -   Fixes dead neuron problem of ReLU <br>
 -   Allows small gradient when x <br 0 <br>
 </li>
-<li>
-6. **Parametric ReLU (PReLU)** 
+<li><strong>Parametric ReLU (PReLU)</strong>
 Similar to Leaky ReLU, but `α` is learned during training. <br>
 
 **Pros:**  <br>
 -   More flexible than Leaky ReLU <br>
 </li>
-<li>
-7. **ELU (Exponential Linear Unit)** <br>
+<li><strong>ELU (Exponential Linear Unit)</strong> <br>
 Formula:
 <div>
     <div align='center'>
@@ -138,8 +131,7 @@ Formula:
 -   Smooth, avoids dead neurons <br>
 -   Zero-centered output <br>
 </li>
-<li>
-8. **Softmax (used in output layer for multi-class classification)** <br>
+<li><strong>Softmax (used in output layer for multi-class classification)</strong> <br>
 Formula:
 <div>
     <div align='center'>
