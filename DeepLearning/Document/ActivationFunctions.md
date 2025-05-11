@@ -10,7 +10,7 @@ Without an activation function, the neural network would behave like a linear re
 -   Controls whether a neuron should be activated or not. <br>
 
 ##  🧮 Types of Activation Functions with Math, Graph, and Use-Cases
-1. Step Function (Not used today)
+1. **Step Function** (Not used today)
 Formula:
 <div>
     <div align='center'>
@@ -22,7 +22,7 @@ Formula:
 -   Problem: Non-differentiable → can’t be used with backpropagation <br>
 
 
-2. Sigmoid / Logistic Function
+2. **Sigmoid / Logistic Function**
 Formula:
 <div>
     <div align='center'>
@@ -46,60 +46,50 @@ Formula:
 -   Outputs not centered at zero
 
 
-3.  Tanh (Hyperbolic Tangent)
+3.  **Tanh (Hyperbolic Tangent)**
 Formula:
 <div>
     <div align='center'>
         <code>Tanh, f(x) = (<span>e<sup>x</sup></span> - <span>e<sup>-x</sup></span>) / (<span>e<sup>x</sup></span> + <span>e<sup>-x</sup></span>)</code>
     </div>
 </div>
-
-Range: (-1, 1) <br>
-
-Derivative: <br>
-
+Range: (-1, 1) 
+Derivative: 
 <div>
     <div align='center'>
         <code>Tanh', f'(x) = 1 - <span>f(X<sup>2</sup></span>)</code>
     </div>
 </div>
 
-
 **Pros:**
--   Zero-centered <br>
--   Better gradient flow than sigmoid <br>
+-   Zero-centered 
+-   Better gradient flow than sigmoid 
 
 **Cons:**
 -   Still suffers from vanishing gradient
 
-
-4. ReLU (Rectified Linear Unit)
+4. **ReLU (Rectified Linear Unit)**
 Formula:
 <div>
     <div align='center'>
         <code> ReLU, f(x) = max(0, x)</code>
     </div>
 </div>
-
-
-Range: [0, ∞) <br>
-
-Derivative: <br>
-
+-   Range: [0, ∞)
+-   Derivative: 
 <div>
     <div align='center'>
         <code>ReLu', f'(x) =  { 1 if x &gt; 0 ; 0 if x ≤ 0 }</code>
     </div>
 </div>
 
-**Pros:** <br>
--   Fast convergence <br>
--   Sparse activation (computational efficiency) <br>
--   Partially solves vanishing gradient <br>
+**Pros:** 
+-   Fast convergence 
+-   Sparse activation (computational efficiency)
+-   Partially solves vanishing gradient
 
 **Cons:**
--   “**Dead neurons**” problem (gradient = 0 for x ≤ 0) <br>
-
+-   “**Dead neurons**” problem (gradient = 0 for x ≤ 0)
 
 5. Leaky ReLU
 Formula:
@@ -110,19 +100,17 @@ Formula:
 </div>
 Note: α is small (e.g., 0.01)
 
-**Pros:** <br>
--   Fixes dead neuron problem of ReLU <br>
--   Allows small gradient when x < 0 <br>
+**Pros:** 
+-   Fixes dead neuron problem of ReLU 
+-   Allows small gradient when x < 0 
 
+6. **Parametric ReLU (PReLU)**
+Similar to Leaky ReLU, but `α` is learned during training.
 
-6. Parametric ReLU (PReLU)
-Similar to Leaky ReLU, but `α` is learned during training. <br>
+**Pros:** 
+-   More flexible than Leaky ReLU 
 
-**Pros:** <br>
--   More flexible than Leaky ReLU <br>
-
-
-7. ELU (Exponential Linear Unit)
+7. **ELU (Exponential Linear Unit)**
 Formula:
 <div>
     <div align='center'>
@@ -130,9 +118,9 @@ Formula:
     </div>
 </div>
 
-**Pros:** <br>
--   Smooth, avoids dead neurons <br>
--   Zero-centered output <br>
+**Pros:** 
+-   Smooth, avoids dead neurons 
+-   Zero-centered output 
 
 8. Softmax (used in output layer for multi-class classification)
 Formula:
@@ -142,6 +130,5 @@ Formula:
     </div>
 </div>
 
-Range: (0, 1), sum = 1 <br>
-
-Use: Converts logits into probabilities across multiple classes <br>
+Range: (0, 1), sum = 1 
+Use: Converts logits into probabilities across multiple classes
