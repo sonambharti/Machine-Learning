@@ -10,7 +10,7 @@ Without an activation function, the neural network would behave like a linear re
 -   Controls whether a neuron should be activated or not. <br>
 
 ##  🧮 Types of Activation Functions with Math, Graph, and Use-Cases
-1. **Step Function** (Not used today)
+1. **Step Function** (Not used today) <br>
 Formula:
 <div>
     <div align='center'>
@@ -22,7 +22,7 @@ Formula:
 -   Problem: Non-differentiable → can’t be used with backpropagation <br>
 
 
-2. **Sigmoid / Logistic Function**
+2. **Sigmoid / Logistic Function** <br>
 Formula:
 <div>
     <div align='center'>
@@ -46,7 +46,7 @@ Formula:
 -   Outputs not centered at zero
 
 
-3.  **Tanh (Hyperbolic Tangent)**
+3.  **Tanh (Hyperbolic Tangent)** <br>
 Formula:
 <div>
     <div align='center'>
@@ -68,7 +68,7 @@ Derivative:
 **Cons:**
 -   Still suffers from vanishing gradient
 
-4. **ReLU (Rectified Linear Unit)**
+4. **ReLU (Rectified Linear Unit)** <br>
 Formula:
 <div>
     <div align='center'>
@@ -91,7 +91,7 @@ Formula:
 **Cons:**
 -   “**Dead neurons**” problem (gradient = 0 for x ≤ 0)
 
-5. Leaky ReLU
+5. **Leaky ReLU** <br>
 Formula:
 <div>
     <div align='center'>
@@ -104,13 +104,13 @@ Note: α is small (e.g., 0.01)
 -   Fixes dead neuron problem of ReLU 
 -   Allows small gradient when x < 0 
 
-6. **Parametric ReLU (PReLU)**
+6. **Parametric ReLU (PReLU)** <br>
 Similar to Leaky ReLU, but `α` is learned during training.
 
 **Pros:** 
 -   More flexible than Leaky ReLU 
 
-7. **ELU (Exponential Linear Unit)**
+7. **ELU (Exponential Linear Unit)** <br>
 Formula:
 <div>
     <div align='center'>
@@ -122,7 +122,7 @@ Formula:
 -   Smooth, avoids dead neurons 
 -   Zero-centered output 
 
-8. Softmax (used in output layer for multi-class classification)
+8. **Softmax (used in output layer for multi-class classification)** <br>
 Formula:
 <div>
     <div align='center'>
