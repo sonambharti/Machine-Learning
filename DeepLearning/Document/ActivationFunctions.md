@@ -1,4 +1,7 @@
-# Activation Function
+<div align='center'>
+    <h1>Activation Function</h1>
+</div>
+
 ##  🔍 What is an Activation Function?
 An activation function in a neural network defines the output of a neuron given an input or set of inputs. It introduces non-linearity, enabling the network to model complex relationships. <br>
 Without an activation function, the neural network would behave like a linear regression model, no matter how many layers it has.
@@ -21,7 +24,6 @@ Formula:
 **Use**: Early Perceptron models <br>
 **Problem**: Non-differentiable → can’t be used with backpropagation <br>
 
-
 2. **Sigmoid / Logistic Function** <br>
 Formula:
 <div>
@@ -29,8 +31,10 @@ Formula:
         <code>Sigmoid, f(x) = <span>1 / (1 + <span>e<sup>-x</sup></span>)</span></code>
     </div>
 </div>
--  Range: (0, 1) <br>
--  Derivative: <br>
+
+-  **Range:** (0, 1) <br>
+-  **Derivative:** <br>
+
 <div>
     <div align='center'>
         <code>Sigmoid', f'(x) = Sigmoid(x) * (1 - Sigmoid(x))</code>
@@ -45,7 +49,6 @@ Formula:
 -  Vanishing gradient problem (when `|x|` is large) <br>
 -  Outputs not centered at zero <br>
 
-
 3.  **Tanh (Hyperbolic Tangent)** <br>
 Formula:
 <div>
@@ -53,8 +56,10 @@ Formula:
         <code>Tanh, f(x) = (<span>e<sup>x</sup></span> - <span>e<sup>-x</sup></span>) / (<span>e<sup>x</sup></span> + <span>e<sup>-x</sup></span>)</code>
     </div>
 </div>
+
 - **Range**: (-1, 1) <br>
 - **Derivative**: <br>
+
 <div>
     <div align='center'>
         <code>Tanh', f'(x) = 1 - <span>f(X<sup>2</sup></span>)</code>
@@ -75,8 +80,10 @@ Formula:
         <code> ReLU, f(x) = max(0, x)</code>
     </div>
 </div>
--  Range: [0, ∞) <br>
--  Derivative: <br>
+
+-  **Range:** [0, ∞) <br>
+-  **Derivative:** <br>
+
 <div>
     <div align='center'>
         <code>ReLu', f'(x) =  { 1 if x &gt; 0 ; 0 if x ≤ 0 }</code>
