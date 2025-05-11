@@ -23,11 +23,8 @@ A Neural Network (NN) is a computational model inspired by the structure and fun
 For neuron 
 <div>
     <div align='center'>
-        <code>
-            z<sub>j</sub><sup>(l)<sup> = &sum;<sub>i</sub> w<sub>ji</sub><sup>l</sup> a<sub>i</sub><sup>(l-1)</sup> +  b<sub>j</sub><sup>(l)</sup>
-            <br><br>
-            a<sub>j</sub><sup>(l)<sup> = g(z<sub>j</sub><sup>l</sup>)
-        </code>
+        <code><span>z<sub>j</sub><sup>(l)<sup></span> = <span>&sum;<sub>i</sub></span> <span>w<sub>ji</sub><sup>l</sup></span> <span>a<sub>i</sub><sup>(l-1)</sup></span> +  <span>b<sub>j</sub><sup>(l)</sup></span></code><br>
+        <code><span>a<sub>j</sub><sup>(l)<sup></span> = g(<span>z<sub>j</sub><sup>l</sup></span>)</code>
     </div>
 </div>
 
