@@ -23,7 +23,8 @@ A Neural Network (NN) is a computational model inspired by the structure and fun
 For neuron 
 <div>
     <div align='center'>
-        <code>z<sub>j</sub><sup>(l)<sup> = &sum;<sub>i</sub> w<sub>ji</sub><sup>l</sup>  a<sub>i</sub><sup>(l-1)</sup> +  b<sub>j</sub><sup>(l)</sup></code>
+        <code>z<sub>j</sub><sup>(l)<sup> = &sum;<sub>i</sub> w<sub>ji</sub><sup>l</sup>  <br><br>
+         a<sub>i</sub><sup>(l-1)</sup> +  b<sub>j</sub><sup>(l)</sup></code>
     </div>
     <div align='center'>
         <code>a<sub>j</sub><sup>(l)<sup> = g(z<sub>j</sub><sup>l</sup>)</code>
@@ -36,17 +37,17 @@ For neuron
 -   g: Activation function (e.g., ReLU: `g(z) = max(0, z))`.
 
 Example: Simple 3-Layer Network <br>
-&nbsp;  - Input layer x, hidden layer h, output layer <br>
+&nbsp;  -   Input layer x, hidden layer h, output layer <br>
 <div>
     <div align='center'>
-        <code>h = g(W<sub>1</sub>x + b<sub>1<sub>)
-        <code>y = g(W<sub>2</sub>x + b<sub>2<sub>)
+        <code>h = g(W<sub>1</sub>x + b<sub>1<sub>) <br>
+        y = g(W<sub>2</sub>x + b<sub>2<sub>) <br>
     </div>
 </div>
 
 
 ##  Applications
-Neural networks are used in: <br>
+Neural networks are used in:
 1.  **Computer Vision**: Image classification (CNNs), object detection. <br>
 2.  **Natural Language Processing (NLP)**: Text generation, translation (Transformers). <br>
 3.  **Speech Recognition**: Voice assistants, transcription. <br>

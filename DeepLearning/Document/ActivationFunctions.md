@@ -18,8 +18,8 @@ Formula:
     </div>
 </div>
 
--   Use: Early Perceptron models <br>
--   Problem: Non-differentiable → can’t be used with backpropagation <br>
+&nbsp;  -   Use: Early Perceptron models <br>
+&nbsp;  -   Problem: Non-differentiable → can’t be used with backpropagation <br>
 
 2. Sigmoid / Logistic Function
 Formula:
