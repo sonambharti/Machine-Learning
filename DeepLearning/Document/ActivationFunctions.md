@@ -14,12 +14,12 @@ Without an activation function, the neural network would behave like a linear re
 Formula:
 <div>
     <div align='center'>
-        <code>Step(x) = { 1 if x &gt; 0 ; 0 otherwise }<br><br></code>
+        <code>Step(x) = { 1 if x &gt; 0 ; 0 otherwise }</code>
     </div>
 </div>
 
-&nbsp;  -   Use: Early Perceptron models <br>
-&nbsp;  -   Problem: Non-differentiable → can’t be used with backpropagation <br>
+-   Use: Early Perceptron models <br>
+-   Problem: Non-differentiable → can’t be used with backpropagation <br>
 
 
 2. Sigmoid / Logistic Function
@@ -30,20 +30,19 @@ Formula:
     </div>
 </div>
 
-Range: (0, 1) <br>
-
-Derivative: <br>
+-   Range: (0, 1) 
+-   Derivative:
 <div>
     <div align='center'>
         <code>Sigmoid', f'(x) = Sigmoid(x) * (1 - Sigmoid(x))</code>
     </div>
 </div>
 
-**Pros:** <br>
--   Smooth gradient <br>
--   Useful in binary classification (as output activation) <br>
+**Pros:**
+-   Smooth gradient 
+-   Useful in binary classification (as output activation)
 
-**Cons:** <br>
+**Cons:** 
 -   Vanishing gradient problem (when `|x|` is large) <br>
 -   Outputs not centered at zero <br>
 
@@ -143,3 +142,7 @@ Formula:
         <code>Softmax, <span>f<sub>i</sub></span>(x) = <span>e<sup>x<sub>i</sub></sup></span> / <span>∑<sub>j</sub></span> <span>e<sup>x<sub>j</sub></sup></span></code>
     </div>
 </div>
+
+Range: (0, 1), sum = 1 <br>
+
+Use: Converts logits into probabilities across multiple classes <br>
