@@ -56,8 +56,7 @@ Formula in HTML (for δ = threshold): <br>
 <div>
     <div align='center'>
         <code><span>L<sub>δ</sub></span>(<span>y<sub>i</sub></span>, <span>y&#770;<sub>i</sub></span>) = { (1/2)(<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>)² if |<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| ≤ δ  <br>
-                δ * (|<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| - δ/2) otherwise }
-        </code>
+                δ * (|<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| - δ/2) otherwise }</code>
     </div>
 </div>
 
