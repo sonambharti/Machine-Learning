@@ -161,7 +161,7 @@ Formula:
     <tr> <td>Softmax</td> <td>(0, 1) (∑=1)</td> <td>Output layer (multi-class)</td> <td>Probabilities</td> <td>Not for hidden layers</td> </tr>
 </tbody> 
 </table>
-
+<!-- 
 | Activation | Range     | Use-case                   | Pros                  | Cons                     |
 | ---------- | --------- | -------------------------- | --------------------- | ------------------------ |
 | Step       | {0,1}     | Early Perceptrons          | Simple                | Non-differentiable       |
@@ -171,6 +171,6 @@ Formula:
 | Leaky ReLU | \~(-∞, ∞) | Hidden layers              | Fixes ReLU dead units | Needs α tuning           |
 | PReLU      | \~(-∞, ∞) | Hidden layers              | Learnable α           | Overfitting possible     |
 | ELU        | \~(-α, ∞) | Hidden layers              | Smooth, zero-centered | Slower computation       |
-| Softmax    | (0,1)     | Output layer (multi-class) | Probabilities         | Not for hidden layers    |
+| Softmax    | (0,1)     | Output layer (multi-class) | Probabilities         | Not for hidden layers    | -->
 
 </div>
