@@ -1,4 +1,7 @@
-#   Neural Networks
+<div align='center'>
+    <h1>Neural Networks</h1>
+</div>
+   
 ##  Definition & Overview
 A Neural Network (NN) is a computational model inspired by the structure and function of biological brains. It consists of interconnected nodes (artificial neurons) organized in layers, designed to recognize patterns, make decisions, or approximate complex functions. Neural networks are the foundation of deep learning and excel at tasks involving unstructured data (e.g., images, text, audio).
 

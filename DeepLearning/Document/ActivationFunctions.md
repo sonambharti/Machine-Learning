@@ -23,8 +23,8 @@ Formula:
     </div>
 </div>
 
-**Use**: Early Perceptron models <br>
-**Problem**: Non-differentiable → can’t be used with backpropagation <br>
+-  **Use**: Early Perceptron models <br>
+-  **Problem**: Non-differentiable → can’t be used with backpropagation <br>
 </li>
 <li><strong>Sigmoid / Logistic Function</strong> <br>
 Formula:
@@ -142,4 +142,35 @@ Formula:
 - **Range:** (0, 1), sum = 1 <br>
 - **Use:** Converts logits into probabilities across multiple classes </br>
 </li>
+</ol>
+</div>
+<div>
+
+##  Summary Table
+
+<table border="1" cellspacing="0" cellpadding="6"> 
+<thead> <tr> <th>Activation</th> <th>Range</th> <th>Use-case</th> <th>Pros</th> <th>Cons</th> </tr> </thead> 
+<tbody> 
+    <tr> <td>Step</td> <td>{0, 1}</td> <td>Early Perceptrons</td> <td>Simple</td> <td>Non-differentiable</td> </tr> 
+    <tr> <td>Sigmoid</td> <td>(0, 1)</td> <td>Output layer (binary)</td> <td>Smooth</td> <td>Vanishing gradient</td> </tr>
+    <tr> <td>Tanh</td> <td>(-1, 1)</td> <td>Hidden layers</td> <td>Zero-centered</td> <td>Still vanishing gradient</td> </tr>
+    <tr> <td>ReLU</td> <td>[0, ∞)</td> <td>Hidden layers</td> <td>Simple, fast</td> <td>Dead neurons</td> </tr>
+    <tr> <td>Leaky ReLU</td> <td>~(-∞, ∞)</td> <td>Hidden layers</td> <td>Fixes ReLU dead units</td> <td>Needs α tuning</td> </tr> 
+    <tr> <td>PReLU</td> <td>~(-∞, ∞)</td> <td>Hidden layers</td> <td>Learnable α</td> <td>Overfitting possible</td> </tr> 
+    <tr> <td>ELU</td> <td>~(-α, ∞)</td> <td>Hidden layers</td> <td>Smooth, zero-centered</td> <td>Slower computation</td> </tr>
+    <tr> <td>Softmax</td> <td>(0, 1) (∑=1)</td> <td>Output layer (multi-class)</td> <td>Probabilities</td> <td>Not for hidden layers</td> </tr>
+</tbody> 
+</table>
+
+| Activation | Range     | Use-case                   | Pros                  | Cons                     |
+| ---------- | --------- | -------------------------- | --------------------- | ------------------------ |
+| Step       | {0,1}     | Early Perceptrons          | Simple                | Non-differentiable       |
+| Sigmoid    | (0,1)     | Output layer (binary)      | Smooth                | Vanishing gradient       |
+| Tanh       | (-1,1)    | Hidden layers              | Zero-centered         | Still vanishing gradient |
+| ReLU       | \[0,∞)    | Hidden layers              | Simple, fast          | Dead neurons             |
+| Leaky ReLU | \~(-∞, ∞) | Hidden layers              | Fixes ReLU dead units | Needs α tuning           |
+| PReLU      | \~(-∞, ∞) | Hidden layers              | Learnable α           | Overfitting possible     |
+| ELU        | \~(-α, ∞) | Hidden layers              | Smooth, zero-centered | Slower computation       |
+| Softmax    | (0,1)     | Output layer (multi-class) | Probabilities         | Not for hidden layers    |
+
 </div>
