@@ -30,6 +30,8 @@ A Cost Function (also known as a Loss Function) is a mathematical function used 
 **Cons:**
 -   Sensitive to outliers (squares large errors) <br>
 
+**Gradient Descent**: is an algorithm that finds the best fit line for the given training data set.
+
 <li><strong>Mean Absolute Error (MAE)</strong><br>
 
 -   **Use Case:** Regression problems where robustness to outliers is desired <br>
