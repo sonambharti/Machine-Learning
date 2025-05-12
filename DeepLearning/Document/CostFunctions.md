@@ -94,16 +94,14 @@ Multiclass Classification Formula:
 <div>
     <div align='center'>
         <code>J(θ) = - (1/n) <span>∑</span> [<span>y<sub>i1</sub></span> log(<span>a<sub>i1</sub></span>) + <span>y<sub>i1</sub></span> log (<span>a<sub>i1</sub></span>)+ ... <span>y<sub>ij</sub></span> log(<span>a<sub>ij</sub></span>)] <br>
-        cost = - <span>&sum;<sub>j=0</sub><sup>m</sup></span> <span>&sum;<sub>i=0</sub><sup>n</sup></span> (<span>y<sub>ij</sub></span> * log(<span>a<sub>ij</sub></span></code>
+        cost = - <span>&sum;<sub>j=0</sub><sup>m</sup></span> <span>&sum;<sub>i=0</sub><sup>n</sup></span> (<span>y<sub>ij</sub></span> * log(<span>a<sub>ij</sub></span>))</code>
     </div>
 </div>
 
 **Pros:**
--   Well-suited for classification <br>
+-   Well-suited for multi-class classification <br>
 -   Strong theoretical grounding in probability <br>
 
-**Cons:**
--   Can be numerically unstable if <code>ŷ<sub>i</sub></code> is very close to 0 or 1
 </li>
 <li><strong>Hinge Loss</strong>
 
