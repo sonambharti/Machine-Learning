@@ -30,7 +30,7 @@ A Cost Function (also known as a Loss Function) is a mathematical function used 
 **Cons:**
 -   Sensitive to outliers (squares large errors) <br>
 
-<li><strong>Mean Absolute Error (MAE)<strong><br>
+<li><strong>Mean Absolute Error (MAE)</strong><br>
 
 -   **Use Case:** Regression problems where robustness to outliers is desired <br>
 Formula in HTML: 
@@ -55,10 +55,7 @@ Formula in HTML (for δ = threshold): <br>
 
 <div>
     <div align='center'>
-        <code><span>L<sub>δ</sub></span>(<span>y<sub>i</sub></span>, y&#770;<sub>i</sub>) = 
-            { 
-                (1/2)(<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>)² if |<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| ≤ δ  
-                <br>
+        <code><span>L<sub>δ</sub></span>(<span>y<sub>i</sub></span>, <span>y&#770;<sub>i</sub></span>) = { (1/2)(<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>)² if |<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| ≤ δ  <br>
                 δ * (|<span>y&#770;<sub>i</sub></span> - <span>y<sub>i</sub></span>| - δ/2) otherwise
             }
         </code>
@@ -79,7 +76,7 @@ Binary Classification Formula in HTML:
 
 <div>
     <div align='center'>
-        <code>J(θ) = - (1/n) <span<∑<sub>i=1</sub><sup>n</sup></span> [<span>y<sub>i</sub></span> log(<span>y&#770;<sub>i</sub></span>) + (1 -<span> y<sub>i</sub></span>) log(1 - <span>y&#770;<sub>i</sub></span>)]</code>
+        <code>J(θ) = - (1/n) <span>∑<sub>i=1</sub><sup>n</sup></span> [<span>y<sub>i</sub></span> log(<span>y&#770;<sub>i</sub></span>) + (1 -<span> y<sub>i</sub></span>) log(1 - <span>y&#770;<sub>i</sub></span>)]</code>
     </div>
 </div>
 
