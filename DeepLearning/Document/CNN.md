@@ -1,10 +1,33 @@
-In Neural Network, for a image if there are (1000 * 1000) pixel and 3 layers for RGB then first input layer will have (3 * 1000 * 1000)  neurons and then next layer will have 1000 neurons.
-So, the number of weights will be (3 * 10^6 * 10^3).
+<div align='center'>
+	<h1>Convolutional Neural Networks (CNN) Fundamentals</h1>
+</div>
 
-But here is a catch, More no. of neurons and more no. of weights will lead to the overfitting of the model. Thus, it will affect the performance of the application. So, To overcome this limitation we now use convolutional neural networks.
+<div>
 
-In CNN, For such images we use convolutional layers. Here we apply filters on the image such as (vertical edge filters, horizontal edge filters, and many more) to detect edges and features of the images which reduce the no of neurons drastically (say, if we apply only these 2 filters to detect the features of the image, then we'll have 9 neurons only).  Each time while sliding through the image we will reduce the neuron size to it's half. 
+##	🔍 What is CNN (Convolutional Neural Network)?
+A Convolutional Neural Network (CNN) is an advanced version of artificial neural networks (ANNs), primarily designed to extract features from grid-like matrix datasets. This is particularly useful for visual datasets such as images or videos, where data patterns play a crucial role. CNNs are widely used in computer vision applications due to their effectiveness in processing visual data. <br>
 
+##	🚫 Why CNN? Drawbacks of Traditional Neural Networks (Fully Connected Networks)
+In Traditional Neural Network, for a image if there are `(1000 * 1000)` pixel and 3 layers for RGB then first input layer will have `(3 * 1000 * 1000)` neurons and then next layer will have 1000 neurons. <br>
+So, the number of weights will be <code>(3 * <span>10<sup>6</sup></span> * <span>10<sup>6</sup></span>)</code>. <br>
+
+But here is a catch, More no. of neurons and more no. of weights will lead to the overfitting of the model. Thus, it will affect the performance of the application. So, To overcome this limitation we now use convolutional neural networks. <br>
+
+In CNN, For such images we use convolutional layers. Here we apply filters on the image such as (vertical edge filters, horizontal edge filters, and many more) to detect edges and features of the images which reduce the no of neurons drastically (say, if we apply only these 2 filters to detect the features of the image, then we'll have 9 neurons only).  Each time while sliding through the image we will reduce the neuron size to it's half.  <br>
+
+###	⚠️ Issues with Dense Neural Networks for Images:
+<ol>
+<li><strong>Too many parameters</strong> <br>
+	<ul><li>Example: A <code>100 X 100</code> RGB image has 30,000 features. A fully connected layer would require millions of parameters.</li></ul></li>
+<li><strong>No spatial awareness</strong> <br>
+	<ul><li>Dense networks ignore the structure of images (e.g., edges, textures, local features).</li></ul></li>
+<li><strong>Overfitting</strong> <br>
+	<ul><li>Too many parameters on limited data → poor generalization.</li></ul></li>
+<li><strong>Inefficiency<strong><br>
+	<ul><li>Doesn’t scale well to large images or video.</li></ul></li>
+</ol>
+
+➡️ **Solution:** CNNs reduce parameters and preserve spatial relationships.
 
 Convolution Operation:
 1.	This operation is used to detect the feature of the image.
@@ -120,18 +143,5 @@ CNN Architecture
 11.	The type of cost function will depend on what classification we need to execute. (such as, Binary cross entropy for Binary classification, and Category cross entropy for multiclass classification).
 12.	Again, in order  to minimize the cost we will use Back propagation algorithm / technique in Artificial Neural Network (like, gradient descent, SGD (Stochastic gradient descent), adam, gradient descent with adam, gradient descent with momentum, etc).
 
-
-
-Tensorflow Vs Keras
--	Tensorflow is a open source python library developed by Google for Machine Learning, Deep Learning purposes. Whereas, Keras is also a open source library python library.
--	Tensorflow is written in C++ . Whereas, Kera is written in Python.
--	Tensorflow is most widely used  framework for building large scale Artificial Intelligence and Deeplearning applications. Wheras, Keras is a higher level API than tensorflow.
--	Tensorflow works by creating a computational graph, and then it is later on executed by passing it input values (i.e. multi-dimensonal vectors also called as tensors). 
-	Whereas, since keras is higher level API, it runs above/ on the top of the tensorflow.
--	Writing code in Tensorflow is bit challenging i.e. not easy to code. Whereas, writing code in keras is extremly easy.
--	Trining the model is fast in Tensorflow because tensorflow is light weight framework. Whereas, training in keras is slow because it is a higher level API.
--	Tensorflow is mainly used for bigger and higher level applications. Whereas, Keras is used for rapid protyping and hence we can build any application very quick and also change the features and enhancement can be done rapidly.
--	Tensorflow is bit difficult to debug. Whereas, Keras has lesser need to debug.
--	Tensorflow is used for large dataset. Whereas, Keras is used for small dataset.
--	Tensorflow has biggest community support. Whereas, Keras has smaller community support.
+</div>
 
