@@ -35,7 +35,7 @@ A CNN usually consists of: <br>
 <ol>
 <li>Input Layer</li>
 <li>Convolutional Layers</li>
-<li>Activation Layers (like ReLU)<li>
+<li>Activation Layers (like ReLU)</li>
 <li>Pooling Layers (Max/Avg)</li>
 <li>Fully Connected Layers</li>
 <li>Output Layer (Softmax/Sigmoid)</li>
