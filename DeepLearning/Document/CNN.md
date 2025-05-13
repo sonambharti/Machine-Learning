@@ -59,15 +59,16 @@ A CNN usually consists of: <br>
 </ol>
 
 ##	🧮 Mathematics Behind CNN Components
-Convolution Operation:
-1.	This operation is used to detect the feature of the image.
-	Let's say we have an image matrix, I of size (6 * 6). And a kernel (filter matrix), K of size (3 * 3).
-	Now, the output matrix, O of this process will be of size (4*4).
+**Convolution Operation:**
+1.	This operation is used to detect the feature of the image. <br>
+	Let's say we have an image matrix, I of size `(6 * 6)`. And a kernel (filter matrix), K of size `(3 * 3)`. <br>
+	Now, the output matrix, O of this process will be of size `(4 * 4)`.
 	
-2.	 And, the value of this matrix will be calculated from:
-	
-	O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))
+2.	 And, the value of this matrix will be calculated from: <br>
 
+	<div align='center'>
+		<code>O<sub>(0,0)</sub> = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))</code>
+	</div>
 	Same process will be followed for each row and column of the image using stride. 
 
 	Stride is the steps that kernel moves each time to cover each row and column of the image.
@@ -93,11 +94,6 @@ Now, How do we calculate convolutional operation over the colored image.
 
 3. We can use multiple filters or m no. of filters for this image.
 
-
-Padding
-1.	Padding means add zeros around the input image  to maintain the output size and preserve the feature of the image. 
-2.	Preserve the feature means, if we don't add padding then corner pixel will be considered only once and hence we can loose the feature detail of the image. 
-3.	We can add multiple layers of padding to preserve the size of the image.
 
 Valid Convolution Vs. Same convolution
 1.	 Valid convolution means no padding. Whereas, Same convolution means add padding in such way the size of original image and the convolutional image is same.
@@ -158,7 +154,7 @@ Fully Connected CNN
 
 
 
-CNN Architecture
+##	Details of CNN Architecture
 1.	Together a convolutional layer and 1 max pooling layer is known as 1-layer. Now this output will be the input of the next convolutional layer with either same or different filter sizes.
 	And, this will continue repeating these layer to get different layers of the CNN depending on the different types of applications.
 2.	If we are performing complex application, then we might need large number of CNN network for complex CNN architecture, and vice versa.
