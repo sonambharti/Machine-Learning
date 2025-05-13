@@ -96,14 +96,12 @@ A CNN usually consists of: <br>
 	the size of the new image after padding will be (8 * 8) and kernel size is (3 * 3) and it will generate output of size (6 * 6) which is of same size of the original image. <br>
 
 	Here, No. of padding, p = 1 in each side <br>
-	```n' = n + 2p```
+	n' = n + 2p
 	
 	So,
-	```
 	(n' - f + 1) = n
 	(n + 2p -f + 1) = n
 	p = (f - 1)/2,		Note: f is usually odd.
-	```
 	<br>
 
 ###	Stride
