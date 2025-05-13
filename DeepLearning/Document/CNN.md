@@ -47,7 +47,7 @@ A CNN usually consists of: <br>
 <li><strong>Stride</strong>: Stride is the steps that kernel moves each time to cover each row and column of the image.</li>
 <li><strong>Padding</strong>: <ul>
 <li>Padding means add zeros around the input image  to maintain the output size and preserve the feature of the image. </li>
-<li>Preserve the feature means, if we don't add padding then corner pixel will be considered only once and hence we can loose the feature detail of the image. <li>
+<li>Preserve the feature means, if we don't add padding then corner pixel will be considered only once and hence we can loose the feature detail of the image. </li>
 <li>We can add multiple layers of padding to preserve the size of the image.</li>
 </ul></li>
 <li><strong>Pooling Layers</strong>: This layer is periodically inserted in the covnets and its main function is to reduce the size of volume which makes the computation fast reduces memory and also prevents overfitting. There are mainly 2 types of pooling layer.<br>
