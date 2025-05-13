@@ -65,9 +65,7 @@ A CNN usually consists of: <br>
 	Now, the output matrix, O of this process will be of size `(4 * 4)`.
 
 2.	 And, the value of this matrix will be calculated from: <br>
-	````
-	O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))
-	````
+	<code>O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))</code>
 	<br>
 	Same process will be followed for each row and column of the image using stride.  <br>
 	Stride is the steps that kernel moves each time to cover each row and column of the image. <br>
