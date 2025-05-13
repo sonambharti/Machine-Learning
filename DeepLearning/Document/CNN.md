@@ -63,40 +63,33 @@ A CNN usually consists of: <br>
 1.	This operation is used to detect the feature of the image. <br>
 	Let's say we have an image matrix, I of size `(6 * 6)`. And a kernel (filter matrix), K of size `(3 * 3)`. <br>
 	Now, the output matrix, O of this process will be of size `(4 * 4)`.
-	
+
 2.	 And, the value of this matrix will be calculated from: <br>
+	```O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))```
+	Same process will be followed for each row and column of the image using stride.  <br>
+	Stride is the steps that kernel moves each time to cover each row and column of the image. <br>
+	Also, we can use padding (i.e. add zeros) around the input to maintain the output size and preserve the feature of the image. <br>
 
-	```
-	O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))
-	```
-	Same process will be followed for each row and column of the image using stride. 
+3.	Here, we are taking stride = 1. i.e., moving 1 row or column in each iteration. And, We didn't add any padding for now. <br>
+	So, the size of output matrix will be calculated by <br>
 
-	Stride is the steps that kernel moves each time to cover each row and column of the image.
-
-	Also, we can use padding (i.e. add zeros) around the input to maintain the output size and preserve the feature of the image.
-
-3.	Here, we are taking stride = 1. i.e., moving 1 row or column in each iteration. And, We didn't add any padding for now.
+	```(n*n) * (f*f) =  (n - f + 1) * (n - f + 1)```
 	
-	So, the size of output matrix will be calculated by
+	This is the result for 1 filter only. If we provide c number of filters then output size will be <br>
+	```(n*n) * (f*f) * c =  (n - f + 1) * (n - f + 1) * c```
 
-	(n*n) * (f*f) =  (n - f + 1) * (n - f + 1)
-	
-	This is the result for 1 filter only. If we provide c number of filters then output size will be
-	(n*n) * (f*f) * c =  (n - f + 1) * (n - f + 1) * c
+*Note:* The above calculation was for grey or black-and-white image. <br>
 
-Note: The above calculation was for grey or black-and-white image.
+**How do we calculate convolutional operation over the colored image.**
+1.	So, for color images, we will use the filter of `(f * f * 3)` size, which means filters having `3 channels` (like RGB - channels in color image) <br>
 
-Now, How do we calculate convolutional operation over the colored image.
+2.	The  output matrix will have only 1 channel which will be calculated by the same way we were calculating in the grey image but this time we'll include the 3 channels too. <br>
 
-1.	So, for color images, we will use the filter of (f * f * 3) size, which means filters having 3 channels (like RGB - channels in color image)
-
-2.	The  output matrix will have only 1 channel which will be calculated by the same way we were calculating in the grey image but this time we'll include the 3 channels too.
-
-3. We can use multiple filters or m no. of filters for this image.
+3. We can use multiple filters or m no. of filters for this image. <br>
 
 
-Valid Convolution Vs. Same convolution
-1.	 Valid convolution means no padding. Whereas, Same convolution means add padding in such way the size of original image and the convolutional image is same.
+**Valid Convolution Vs. Same convolution**
+1.	 `Valid convolution` means `no padding`. Whereas, `Same convolution` means add padding in such way the size of original image and the convolutional image is same. <br>
 	
 		Here, in the above example if we add one row before the first row, one row after the last row, and one col before the first col, one col after the last col. Then,
 	the size of the new image after padding will be (8 * 8) and kernel size is (3 * 3) and it will generate output of size (6 * 6) which is of same size of the original image.
@@ -105,16 +98,18 @@ Valid Convolution Vs. Same convolution
 	n' = n + 2p
 	
 	So,
+	```
 	(n' - f + 1) = n
 	(n + 2p -f + 1) = n
 	p = (f - 1)/2,		Note: f is usually odd.
-	
+	```
+	<br>
 
-Stride
-1.	Stride is the number of steps that kernel moves each time to cover each row and column of the image. It can be any no.
-2.	If we have stride value 2, then the kernel/filter will move by 2 pixels in the image.
-3.	What will happen to the left pixels if there is only 1 row left after 2 stride and kernel size is (3 * 3). We will just discard that row from  the convolution.
-4. 	Hence, the size of the output image after the stride will be
+**Stride**
+1.	Stride is the number of steps that kernel moves each time to cover each row and column of the image. It can be any no. <br>
+2.	If we have stride value 2, then the kernel/filter will move by 2 pixels in the image.<br>
+3.	What will happen to the left pixels if there is only 1 row left after 2 stride and kernel size is (3 * 3). We will just discard that row from  the convolution. <br>
+4. 	Hence, the size of the output image after the stride will be <br>
 	
 	Size of Output Image, O1 = floor((n - f)/s) + 1 , for the image size n * n
 	
