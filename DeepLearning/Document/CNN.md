@@ -160,3 +160,17 @@ A CNN usually consists of: <br>
 
 </div>
 
+##	🧬 Types of CNNs / CNN Variants
+
+| CNN Type                  | Description                                         |
+| ------------------------- | --------------------------------------------------- |
+| **Basic CNN**             | Simple convolution → pooling → FC                   |
+| **LeNet**                 | First CNN, used for digit recognition               |
+| **AlexNet**               | Deeper + ReLU + Dropout                             |
+| **VGGNet**                | Uses small 3x3 filters but very deep                |
+| **GoogLeNet (Inception)** | Multi-size filters in parallel                      |
+| **ResNet**                | Adds skip connections (solves vanishing gradient)   |
+| **MobileNet**             | Efficient CNN for mobile (depthwise separable conv) |
+| **DenseNet**              | Dense connections between layers                    |
+
+
