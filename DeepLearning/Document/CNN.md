@@ -23,7 +23,7 @@ In CNN, For such images we use convolutional layers. Here we apply filters on th
 	<ul><li>Dense networks ignore the structure of images (e.g., edges, textures, local features).</li></ul></li>
 <li><strong>Overfitting</strong> <br>
 	<ul><li>Too many parameters on limited data → poor generalization.</li></ul></li>
-<li><strong>Inefficiency<strong><br>
+<li><strong>Inefficiency</strong><br>
 	<ul><li>Doesn’t scale well to large images or video.</li></ul></li>
 </ol>
 
