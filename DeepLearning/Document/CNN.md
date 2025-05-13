@@ -65,7 +65,9 @@ A CNN usually consists of: <br>
 	Now, the output matrix, O of this process will be of size `(4 * 4)`.
 
 2.	 And, the value of this matrix will be calculated from: <br>
-	```O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))```
+	````
+	O(0,0) = (( I(0,0)*K(0,0) + I(0,1)*K(0,1) + I(0,2)*K(0,2)) + (I(1,0)*K(1,0) +  I(1,1)*K(1,1) + I(1,2)*K(1,2)) +  (I(2,0)*K(2,0) +  I(2,1)*K(2,1) + I(2,2)*K(2,2)))
+	````
 	Same process will be followed for each row and column of the image using stride.  <br>
 	Stride is the steps that kernel moves each time to cover each row and column of the image. <br>
 	Also, we can use padding (i.e. add zeros) around the input to maintain the output size and preserve the feature of the image. <br>
@@ -92,10 +94,10 @@ A CNN usually consists of: <br>
 1.	 `Valid convolution` means `no padding`. Whereas, `Same convolution` means add padding in such way the size of original image and the convolutional image is same. <br>
 	
 		Here, in the above example if we add one row before the first row, one row after the last row, and one col before the first col, one col after the last col. Then,
-	the size of the new image after padding will be (8 * 8) and kernel size is (3 * 3) and it will generate output of size (6 * 6) which is of same size of the original image.
+	the size of the new image after padding will be (8 * 8) and kernel size is (3 * 3) and it will generate output of size (6 * 6) which is of same size of the original image. <br>
 
-	Here, No. of padding, p = 1 in each side
-	n' = n + 2p
+	Here, No. of padding, p = 1 in each side <br>
+	```n' = n + 2p```
 	
 	So,
 	```
