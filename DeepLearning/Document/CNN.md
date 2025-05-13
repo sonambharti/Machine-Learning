@@ -42,6 +42,23 @@ A CNN usually consists of: <br>
 </ol>
 
 
+##	Important Terminology
+<ol>
+<li><strong>Stride</strong>: Stride is the steps that kernel moves each time to cover each row and column of the image.</li>
+<li><strong>Padding</strong>: <ul>
+<li>Padding means add zeros around the input image  to maintain the output size and preserve the feature of the image. </li>
+<li>Preserve the feature means, if we don't add padding then corner pixel will be considered only once and hence we can loose the feature detail of the image. <li>
+<li>We can add multiple layers of padding to preserve the size of the image.</li>
+</ul></li>
+<li><strong>Pooling Layers</strong>: This layer is periodically inserted in the covnets and its main function is to reduce the size of volume which makes the computation fast reduces memory and also prevents overfitting. There are mainly 2 types of pooling layer.<br>
+<ul><li><strong>Average Pooling</strong>: Find the average of the output of the convolutional image window (kernel size).</li>
+<li><strong>Max Pooling</strong>: Extract the maximum value of the output of the convolutional image window(kernel size).</li></ul>
+</li>
+<li><strong>Flattening</strong>: The resulting feature maps are flattened into a one-dimensional vector after the convolution and pooling layers so they can be passed into a completely linked layer for categorization or regression.</li>
+<li><strong>Fully Connected Layers</strong>: It takes the input from the previous layer and computes the final classification or regression task.</li>
+</ol>
+
+##	🧮 Mathematics Behind CNN Components
 Convolution Operation:
 1.	This operation is used to detect the feature of the image.
 	Let's say we have an image matrix, I of size (6 * 6). And a kernel (filter matrix), K of size (3 * 3).
@@ -78,7 +95,7 @@ Now, How do we calculate convolutional operation over the colored image.
 
 
 Padding
-1.	Padding means add zeros) around the input image  to maintain the output size and preserve the feature of the image. 
+1.	Padding means add zeros around the input image  to maintain the output size and preserve the feature of the image. 
 2.	Preserve the feature means, if we don't add padding then corner pixel will be considered only once and hence we can loose the feature detail of the image. 
 3.	We can add multiple layers of padding to preserve the size of the image.
 
