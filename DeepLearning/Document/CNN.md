@@ -59,7 +59,7 @@ A CNN usually consists of: <br>
 </ol>
 
 ##	🧮 Mathematics Behind CNN Components
-**Convolution Operation:**
+###	Convolution Operation:
 1.	This operation is used to detect the feature of the image. <br>
 	Let's say we have an image matrix, I of size `(6 * 6)`. And a kernel (filter matrix), K of size `(3 * 3)`. <br>
 	Now, the output matrix, O of this process will be of size `(4 * 4)`.
@@ -81,7 +81,7 @@ A CNN usually consists of: <br>
 
 *Note:* The above calculation was for grey or black-and-white image. <br>
 
-**How do we calculate convolutional operation over the colored image.**
+###	How do we calculate convolutional operation over the colored image.
 1.	So, for color images, we will use the filter of `(f * f * 3)` size, which means filters having `3 channels` (like RGB - channels in color image) <br>
 
 2.	The  output matrix will have only 1 channel which will be calculated by the same way we were calculating in the grey image but this time we'll include the 3 channels too. <br>
@@ -89,7 +89,7 @@ A CNN usually consists of: <br>
 3. We can use multiple filters or m no. of filters for this image. <br>
 
 
-**Valid Convolution Vs. Same convolution**
+###	Valid Convolution Vs. Same convolution
 1.	 `Valid convolution` means `no padding`. Whereas, `Same convolution` means add padding in such way the size of original image and the convolutional image is same. <br>
 	
 		Here, in the above example if we add one row before the first row, one row after the last row, and one col before the first col, one col after the last col. Then,
@@ -106,7 +106,7 @@ A CNN usually consists of: <br>
 	```
 	<br>
 
-**Stride**
+###	Stride
 1.	Stride is the number of steps that kernel moves each time to cover each row and column of the image. It can be any no. <br>
 2.	If we have stride value 2, then the kernel/filter will move by 2 pixels in the image.<br>
 3.	What will happen to the left pixels if there is only 1 row left after 2 stride and kernel size is (3 * 3). We will just discard that row from  the convolution. <br>
@@ -117,8 +117,7 @@ A CNN usually consists of: <br>
 	Size of Output Image, O2 = ( floor((n1 - f)/s) + 1) * ( floor((n2 - f)/s) + 1) , for the image size n1 * n2
 
 
-
-Max Pooling Layer in CNN
+###	Max Pooling Layer in CNN
 1.	There are many types of pooling layer in CNN. The function of pooling layer is to reduce the size or the dimension of the image while preserving the feature of the image.
 2.	What is Max Pooling?
 	-	Extract the maximum value of the output of the convolutional image window(kernel size) when filter is sliding by the given stride.
@@ -130,14 +129,11 @@ Max Pooling Layer in CNN
 5.	We will receive the same no. of images after max pooling, that we get after convolutional layer during the operation with c no of kernels/filters.
 6.	It is not always necessary to apply max pooling layer after each convolutional layer, or we can just skip max pooling layer.
 7.	Use of the max pooling  layer can improve the performance of the model.
-8.	Different types of Pooling layer:
-	i.)	Max Pooling
-	ii.)	Average Pooling - Find the average of the output of the convolutional image  window (kernel size)
-9.	No parameters involved, thus no training required
-10.	Same no. of channels in output as input.
-
+8.	No parameters involved, thus no training required
+9.	Same no. of channels in output as input.
  
-Fully Connected CNN
+
+###	Fully Connected CNN
 1.	Fully connected layers is a dense network of neurons or connection between every 2 neurons, same as simple neuron networks.
 2.	Where do we use Fully Connected CNN?
 	-	We use it to categorise the category of the image after feature extraction process of the image (i.e. Convolutional Operation and after max pooling).
@@ -147,7 +143,6 @@ Fully Connected CNN
 4.	In last layer of Fully connected layer we will have 2 neurons for binary class classification, and will use Sigmoid activation function to classify image into a particular category.
 5.	The weights in the fully connected layers are trainable parameters to learn, and play a vital role in associating the relation between the features of the different categories or labels of the image.
 6.	Thus, fully connected layers are the essential part of the Convolutional Neural Network (CNN) architecture.
-
 
 
 ##	Details of CNN Architecture
