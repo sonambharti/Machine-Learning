@@ -174,3 +174,11 @@ A CNN usually consists of: <br>
 | **DenseNet**              | Dense connections between layers                    |
 
 
+##	📦 Applications of CNN
+-	Image Classification (e.g., cats vs dogs) <br>
+-	Object Detection (YOLO, SSD) <br>
+-	Face Recognition <br>
+-	Self-driving Cars (road/lane detection) <br>
+-	Medical Imaging (e.g., tumor detection) <br>
+-	Video Surveillance (activity recognition) <br>
+-	Style Transfer and Image Generation <br>
