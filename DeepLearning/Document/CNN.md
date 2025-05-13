@@ -18,7 +18,7 @@ In CNN, For such images we use convolutional layers. Here we apply filters on th
 ###	⚠️ Issues with Dense Neural Networks for Images:
 <ol>
 <li><strong>Too many parameters</strong> <br>
-	<ul><li>Example: A <code>100 X 100</code> RGB image has 30,000 features. A fully connected layer would require millions of parameters.</li></ul></li>
+	<ul><li>Example: A <code>1000 X 1000</code> RGB image has 30,00,000 features. A fully connected layer would require millions of parameters.</li></ul></li>
 <li><strong>No spatial awareness</strong> <br>
 	<ul><li>Dense networks ignore the structure of images (e.g., edges, textures, local features).</li></ul></li>
 <li><strong>Overfitting</strong> <br>
@@ -28,6 +28,19 @@ In CNN, For such images we use convolutional layers. Here we apply filters on th
 </ol>
 
 ➡️ **Solution:** CNNs reduce parameters and preserve spatial relationships.
+
+
+##	🧠 CNN Architecture Overview
+A CNN usually consists of: <br>
+<ol>
+<li>Input Layer</li>
+<li>Convolutional Layers</li>
+<li>Activation Layers (like ReLU)<li>
+<li>Pooling Layers (Max/Avg)</li>
+<li>Fully Connected Layers</li>
+<li>Output Layer (Softmax/Sigmoid)</li>
+</ol>
+
 
 Convolution Operation:
 1.	This operation is used to detect the feature of the image.
